@@ -1,0 +1,188 @@
+User,Project Count,Project Names
+luotao1,37,"新IR Python API适配升级（第三期）, 【快乐开源】Paddle 算子规范化任务, 【开源任务】CINN编译器后端Pass改造, [PIR] Adaptation of `test_zero_dim_*.py` - step: 2, 【开源任务】CINN编译器后端Pass注释添加, 【快乐开源】将 PyLayer 机制迁移至 PIR 体系下, 【Docathon】为 Tensor API 文档增加图例, 【快乐开源】Paddle Tensor 规范化, [Typing][PEP585 Upgrade] PEP 585 标准集合泛型支持升级——Python 3.8 退场前瞻特别任务, 【开源任务】Paddle2ONNX适配Paddle IR完成常用模型转化, 【快乐开源】Paddle Tensor 规范化二期, 【快乐开源】为 PaddleScience 案例添加 export 和 inference 功能, [Cleanup] 框架历史遗留 API 清理计划（一期）, 【PIR】Sparse 算子 Python API 适配, [docs清理] 清理未暴露在 sphinx toctree 下的文档, 【PIR】PIR下的分布式算子注册, 为 Paddle 框架 API 添加类型提示（Type Hints）Tracking Issue, 【Hackathon 7th】Fundable Projects No.7, 【快乐开源】PIR test_errors 相关单测适配 , [CodeStyle][Typos][O-W] ✏️ Typos 工具引入计划, 🎁PaddleMIX 快乐开源活动表单, [CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划, 【快乐开源】PIR模式下单测问题修复与适配, 【编译优化】paddle_test 推全, 【快乐开源】CINN编译器符号推导扩量, [Type Hints] 为公开 API 标注类型提示信息, 【Docathon】补充Overview文档相关API描述, 【开源任务】PIR-TensorRT converter推全升级, 【complex op】paddlepaddle 支持复数, 【飞桨科学计算工具组件开发大赛】25w奖金池💰, ✏️ Typo 清理计划, Hackathon 7th Fundable Projects No.1 修改算子列表, PaddleMIX 快乐开源活动 (2024 Q4), 【快乐开源】报错日志体系优化, Hackathon 7th Fundable Projects No.2 修改算子列表, [CodeStyle][Ruff] Ruff 新 rule 引入计划（第二期）, 【快乐开源】PIR SaveLoad 体系单测适配"
+enkilee,15,"[CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划, 【Hackathon 6th】开源贡献个人挑战赛, 【Hackathon 7th】开源贡献个人挑战赛, 【快乐开源】PIR模式下单测问题修复与适配, 【快乐开源】CINN编译器符号推导扩量, 【Hackathon 7th】Fundable Projects No.7, [Type Hints] 为公开 API 标注类型提示信息, 【开源任务】PIR-TensorRT converter推全升级, [Cleanup] 框架历史遗留 API 清理计划（一期）, 【快乐开源】PIR SaveLoad 体系单测适配, 【快乐开源】报错日志体系优化, 【PIR】PIR下的分布式算子注册, 【快乐开源】Paddle Tensor 规范化, [Typing][PEP585 Upgrade] PEP 585 标准集合泛型支持升级——Python 3.8 退场前瞻特别任务, 【快乐开源】PIR test_errors 相关单测适配 "
+SigureMo,12,"新IR Python API适配升级（第三期）, [CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划, [CodeStyle][Ruff] Ruff 新 rule 引入计划（第二期）, 【快乐开源】PIR模式下单测问题修复与适配, ✏️ Typo 清理计划, [Type Hints] 为公开 API 标注类型提示信息, [PIR] Adaptation of `test_zero_dim_*.py` - step: 2, [Cleanup] 框架历史遗留 API 清理计划（一期）, 飞桨 IR 快乐开源活动表单, 为 Paddle 框架 API 添加类型提示（Type Hints）Tracking Issue, [Typing][PEP585 Upgrade] PEP 585 标准集合泛型支持升级——Python 3.8 退场前瞻特别任务, [CodeStyle][Typos][O-W] ✏️ Typos 工具引入计划"
+gouzil,9,"【Hackathon 7th Code Camp】护航计划, [CodeStyle][Ruff] Ruff 新 rule 引入计划（第二期）, [Type Hints] 为公开 API 标注类型提示信息, [PIR] Adaptation of `test_zero_dim_*.py` - step: 2, [Cleanup] 框架历史遗留 API 清理计划（一期）, 【Hackathon 6th Code Camp】护航计划, 飞桨 IR 快乐开源活动表单, [Typing][PEP585 Upgrade] PEP 585 标准集合泛型支持升级——Python 3.8 退场前瞻特别任务, 【快乐开源】PIR test_errors 相关单测适配 "
+ooooo-create,9,"新IR Python API适配升级（第三期）, 【Hackathon 7th Code Camp】护航计划, [CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划, 【快乐开源】CINN编译器符号推导扩量, [Type Hints] 为公开 API 标注类型提示信息, 【开源任务】PIR-TensorRT converter推全升级, [Cleanup] 框架历史遗留 API 清理计划（一期）, [docs清理] 清理未暴露在 sphinx toctree 下的文档, 【快乐开源】PIR test_errors 相关单测适配 "
+PolaKuma,8,"【快乐开源】Paddle 算子规范化任务, PaddleMIX 快乐开源活动 (2024 Q4), 【快乐开源】Paddle Tensor 规范化二期, 【快乐开源】为 PaddleScience 案例添加 export 和 inference 功能, 【开源任务】PIR-TensorRT converter推全升级, 【开源任务】CINN编译器后端Pass注释添加, 【Docathon】为 Tensor API 文档增加图例, 【快乐开源】Paddle Tensor 规范化"
+Liyulingyue,8,"【Hackathon 7th】Fundable Projects, 【编译优化】paddle_test 推全, [Type Hints] 为公开 API 标注类型提示信息, [Cleanup] 框架历史遗留 API 清理计划（一期）, 【Hackathon 6th】Fundable Projects, 【快乐开源】报错日志体系优化, 【Docathon】为 Tensor API 文档增加图例, 【Hackathon 7th】Fundable Projects No.7"
+NKNaN,8,"【Hackathon 7th Code Camp】护航计划, 【Hackathon 6th】开源贡献个人挑战赛, 【Hackathon 7th】开源贡献个人挑战赛, [Type Hints] 为公开 API 标注类型提示信息, 【快乐开源】为 PaddleScience 案例添加 export 和 inference 功能, [Cleanup] 框架历史遗留 API 清理计划（一期）, 【Hackathon 6th Code Camp】护航计划, 【快乐开源】Paddle Tensor 规范化"
+co63oc,7,"【Hackathon 7th】Fundable Projects, 🎁PaddleMIX 快乐开源活动表单, [Cleanup] 框架历史遗留 API 清理计划（一期）, 【飞桨科学计算工具组件开发大赛】25w奖金池💰, 【Hackathon 6th】Fundable Projects, Hackathon 7th Fundable Projects No.1 修改算子列表, Hackathon 7th Fundable Projects No.2 修改算子列表"
+megemini,7,"【Hackathon 7th】Fundable Projects, 【Hackathon 6th】开源贡献个人挑战赛, [Type Hints] 为公开 API 标注类型提示信息, [Cleanup] 框架历史遗留 API 清理计划（一期）, 【Hackathon 6th】Fundable Projects, 为 Paddle 框架 API 添加类型提示（Type Hints）Tracking Issue, 【Hackathon 7th】Fundable Projects No.7"
+zrr1999,7,"新IR Python API适配升级（第三期）, 【Hackathon 7th Code Camp】护航计划, [Type Hints] 为公开 API 标注类型提示信息, 【Hackathon 6th Code Camp】护航计划, 【Hackathon 6th】Fundable Projects, 飞桨 IR 快乐开源活动表单, 【快乐开源】PIR test_errors 相关单测适配 "
+yinfan98,6,"【Hackathon 7th】Fundable Projects, 【Hackathon 7th Code Camp】护航计划, [CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划, 【Hackathon 7th】开源贡献个人挑战赛, 【Hackathon 6th Code Camp】护航计划, 【Hackathon 7th】Fundable Projects No.7"
+Whsjrczr,5,"[CodeStyle][Ruff] Ruff 新 rule 引入计划（第二期）, 【快乐开源】CINN编译器符号推导扩量, [Type Hints] 为公开 API 标注类型提示信息, 【Docathon】为 Tensor API 文档增加图例, [Typing][PEP585 Upgrade] PEP 585 标准集合泛型支持升级——Python 3.8 退场前瞻特别任务"
+sunzhongkai588,5,"[Type Hints] 为公开 API 标注类型提示信息, 【Docathon】补充Overview文档相关API描述, ✏️ Typo 清理计划, 【Docathon】为 Tensor API 文档增加图例, 为 Paddle 框架 API 添加类型提示（Type Hints）Tracking Issue"
+yangrongxinuser,5,"【快乐开源】Paddle 算子规范化任务, PaddleMIX 快乐开源活动 (2024 Q4), 【开源任务】PIR-TensorRT converter推全升级, 【Docathon】为 Tensor API 文档增加图例, 【快乐开源】Paddle Tensor 规范化"
+Asthestarsfalll,5,"【Hackathon 6th】开源贡献个人挑战赛, 【Hackathon 7th】开源贡献个人挑战赛, [Type Hints] 为公开 API 标注类型提示信息, 【Hackathon 6th】Fundable Projects, 为 Paddle 框架 API 添加类型提示（Type Hints）Tracking Issue"
+GreatV,4,"【快乐开源】为 PaddleScience 案例添加 export 和 inference 功能, 【Hackathon 6th】Fundable Projects, [Cleanup] 框架历史遗留 API 清理计划（一期）, 【Hackathon 7th】Fundable Projects No.7"
+MrXnneHang,4,"【快乐开源】Paddle Tensor 规范化二期, [CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划, 【快乐开源】Paddle Tensor 规范化, [CodeStyle][Typos][O-W] ✏️ Typos 工具引入计划"
+GoldenStain,4,"【快乐开源】为 PaddleScience 案例添加 export 和 inference 功能, 【快乐开源】CINN编译器符号推导扩量, 【Docathon】为 Tensor API 文档增加图例, 第三期启航计划"
+HydrogenSulfate,4,"【快乐开源】为 PaddleScience 案例添加 export 和 inference 功能, 【飞桨科学计算工具组件开发大赛】25w奖金池💰, 【快乐开源】Paddle Tensor 规范化, 【快乐开源】Paddle Tensor 规范化二期"
+LittleHeroZZZX,4,"【开源任务】CINN编译器后端Pass注释添加, 【开源任务】CINN编译器后端Pass改造, 【Docathon】为 Tensor API 文档增加图例, 【快乐开源】Paddle Tensor 规范化"
+gongshaotian,4,"【快乐开源】CINN编译器符号推导扩量, 【开源任务】CINN编译器后端Pass改造, 【开源任务】CINN编译器后端Pass注释添加, 【快乐开源】Paddle 算子规范化任务"
+Wang-ZengWei,4,"第三期启航计划, 第二期启航计划, [docs清理] 清理未暴露在 sphinx toctree 下的文档, 【Docathon】补充Overview文档相关API描述"
+MufanColin,4,"【快乐开源】CINN编译器符号推导扩量, 【Docathon】为 Tensor API 文档增加图例, [CodeStyle][Ruff] Ruff 新 rule 引入计划（第二期）, [Typing][PEP585 Upgrade] PEP 585 标准集合泛型支持升级——Python 3.8 退场前瞻特别任务"
+wwwuyan,4,"【开源任务】PIR-TensorRT converter推全升级, 【Docathon】为 Tensor API 文档增加图例, 【快乐开源】Paddle Tensor 规范化, 【快乐开源】Paddle Tensor 规范化二期"
+kineast,4,"【开源任务】PIR-TensorRT converter推全升级, 【快乐开源】Paddle Tensor 规范化, 【快乐开源】Paddle 算子规范化任务, 【快乐开源】Paddle Tensor 规范化二期"
+Fripping,4,"【快乐开源】CINN编译器符号推导扩量, [Typing][PEP585 Upgrade] PEP 585 标准集合泛型支持升级——Python 3.8 退场前瞻特别任务, [CodeStyle][Ruff] Ruff 新 rule 引入计划（第二期）, [Type Hints] 为公开 API 标注类型提示信息"
+haoyu2022,4,"第三期启航计划, 第二期启航计划, 【Docathon】为 Tensor API 文档增加图例, [Type Hints] 为公开 API 标注类型提示信息"
+YuanRisheng,3,"【开源任务】PIR-TensorRT converter推全升级, 新IR Python API适配升级（第三期）, 【快乐开源】PIR模式下单测问题修复与适配"
+AndPuQing,3,"【快乐开源】CINN编译器符号推导扩量, 【Hackathon 7th Code Camp】护航计划, 【Hackathon 6th】开源贡献个人挑战赛"
+hu-qi,3,"第二期启航计划, [docs清理] 清理未暴露在 sphinx toctree 下的文档, 【Docathon】补充Overview文档相关API描述"
+risemeup1,3,"【开源任务】Paddle2ONNX适配Paddle IR完成常用模型转化, 【快乐开源】报错日志体系优化, 【PIR】Sparse 算子 Python API 适配"
+Wizard-ZP,3,"【快乐开源】CINN编译器符号推导扩量, [CodeStyle][Ruff] Ruff 新 rule 引入计划（第二期）, [Type Hints] 为公开 API 标注类型提示信息"
+inaomIIsfarell,3,"第三期启航计划, [Type Hints] 为公开 API 标注类型提示信息, 【Hackathon 7th】开源贡献个人挑战赛"
+SCUcookie,3,"【Docathon】为 Tensor API 文档增加图例, 【快乐开源】Paddle Tensor 规范化, 【快乐开源】Paddle Tensor 规范化二期"
+Caogration,3,"【快乐开源】CINN编译器符号推导扩量, [Typing][PEP585 Upgrade] PEP 585 标准集合泛型支持升级——Python 3.8 退场前瞻特别任务, [Type Hints] 为公开 API 标注类型提示信息"
+Sekiro-x,3,"第三期启航计划, 【Docathon】为 Tensor API 文档增加图例, [Type Hints] 为公开 API 标注类型提示信息"
+successfulbarrier,3,"第三期启航计划, 【Docathon】为 Tensor API 文档增加图例, [Type Hints] 为公开 API 标注类型提示信息"
+Marcusryz,3,"【快乐开源】CINN编译器符号推导扩量, 【Docathon】为 Tensor API 文档增加图例, [CodeStyle][Ruff] Ruff 新 rule 引入计划（第二期）"
+zeroRains,3,"【Hackathon 6th Code Camp】护航计划, 【Hackathon 7th Code Camp】护航计划, 【Hackathon 6th】开源贡献个人挑战赛"
+Jeff114514,3,"【快乐开源】CINN编译器符号推导扩量, [CodeStyle][Ruff] Ruff 新 rule 引入计划（第二期）, [Type Hints] 为公开 API 标注类型提示信息"
+aquagull,3,"【快乐开源】Paddle Tensor 规范化, 【快乐开源】Paddle 算子规范化任务, 【快乐开源】Paddle Tensor 规范化二期"
+Aoraki-Dream,3,"第三期启航计划, 【Docathon】为 Tensor API 文档增加图例, 【complex op】paddlepaddle 支持复数"
+tlxd,3,"【快乐开源】CINN编译器符号推导扩量, [CodeStyle][Ruff] Ruff 新 rule 引入计划（第二期）, [Type Hints] 为公开 API 标注类型提示信息"
+AndSonder,3,"【Hackathon 6th】优秀稿件征集与传播, 【Hackathon 6th Code Camp】护航计划, 【Hackathon 6th】开源贡献个人挑战赛"
+hanyang2508,3,"【开源任务】CINN编译器后端Pass注释添加, 【Docathon】为 Tensor API 文档增加图例, [CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划"
+xiaoyewww,3,"【编译优化】paddle_test 推全, 【PIR】PIR下的分布式算子注册, 【Hackathon 6th】开源贡献个人挑战赛"
+BHmingyang,3,"【快乐开源】CINN编译器符号推导扩量, [Typing][PEP585 Upgrade] PEP 585 标准集合泛型支持升级——Python 3.8 退场前瞻特别任务, [Type Hints] 为公开 API 标注类型提示信息"
+ccsuzzh,3,"【编译优化】paddle_test 推全, 【Hackathon 6th】Fundable Projects, 【Hackathon 7th】开源贡献个人挑战赛"
+Luohongzhige,3,"【快乐开源】CINN编译器符号推导扩量, 【Docathon】为 Tensor API 文档增加图例, [Type Hints] 为公开 API 标注类型提示信息"
+Lans1ot,3,"【快乐开源】CINN编译器符号推导扩量, 【Docathon】为 Tensor API 文档增加图例, [Type Hints] 为公开 API 标注类型提示信息"
+gsq7474741,3,"【Hackathon 6th】Fundable Projects, [Type Hints] 为公开 API 标注类型提示信息, 【Docathon】补充Overview文档相关API描述"
+fxy1699,3,"【开源任务】CINN编译器后端Pass注释添加, [CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划, 【快乐开源】Paddle Tensor 规范化二期"
+crazyxiaoxi,3,"【快乐开源】CINN编译器符号推导扩量, [CodeStyle][Ruff] Ruff 新 rule 引入计划（第二期）, [Type Hints] 为公开 API 标注类型提示信息"
+xiaoguoguo626807,2,"【快乐开源】PIR模式下单测问题修复与适配, 【快乐开源】PIR SaveLoad 体系单测适配"
+jerrywgz,2,"# PaddleMIX 快乐开源活动 (2024 Q3), PaddleMIX 快乐开源活动 (2024 Q4)"
+MikhayEeer,2,"第三期启航计划, [Type Hints] 为公开 API 标注类型提示信息"
+uanu2002,2,"【快乐开源】CINN编译器符号推导扩量, [Type Hints] 为公开 API 标注类型提示信息"
+nemonameless,2,"# PaddleMIX 快乐开源活动 (2024 Q3), PaddleMIX 快乐开源活动 (2024 Q4)"
+mori0umi,2,"【开源任务】PIR-TensorRT converter推全升级, 【Docathon】为 Tensor API 文档增加图例"
+ZHOU05030,2,"【快乐开源】Paddle Tensor 规范化, 【快乐开源】Paddle Tensor 规范化二期"
+Sylence8,2,"【快乐开源】Paddle Tensor 规范化, 【快乐开源】Paddle Tensor 规范化二期"
+Austin-00,2,"第二期启航计划, 【Hackathon 6th Code Camp】护航计划"
+Eddie-Wang1120,2,"第二期启航计划, 【Hackathon 6th Code Camp】护航计划"
+fangfangssj,2,"[CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划, 【快乐开源】Paddle Tensor 规范化二期"
+nizne9,2,"[CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划, 【快乐开源】Paddle Tensor 规范化二期"
+Albresky,2,"【开源任务】CINN编译器后端Pass改造, 【开源任务】CINN编译器后端Pass注释添加"
+Hongqing-work,2,"【开源任务】CINN编译器后端Pass改造, 【开源任务】CINN编译器后端Pass注释添加"
+zty-king,2,"【Hackathon 7th Code Camp】护航计划, 【Hackathon 7th】开源贡献个人挑战赛"
+WAYKEN-TSE,2,"[CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划, PaddleMIX 快乐开源活动 (2024 Q4)"
+lwkhahaha,2,"【快乐开源】CINN编译器符号推导扩量, 【Docathon】为 Tensor API 文档增加图例"
+smallpoxscattered,2,"【快乐开源】为 PaddleScience 案例添加 export 和 inference 功能, 第二期启航计划"
+Guanhuachen2003,2,"【快乐开源】CINN编译器符号推导扩量, 【Docathon】为 Tensor API 文档增加图例"
+Galaxy1458,2,"【快乐开源】报错日志体系优化, 【编译优化】paddle_test 推全"
+0x45f,2,"新IR Python API适配升级（第三期）, 【快乐开源】PIR test_errors 相关单测适配 "
+1want2sleep,2,"【快乐开源】为 PaddleScience 案例添加 export 和 inference 功能, 第二期启航计划"
+wufei2,2,"【快乐开源】为 PaddleScience 案例添加 export 和 inference 功能, 第二期启航计划"
+StellaZYing,2,"第二期启航计划, 【Docathon】补充Overview文档相关API描述"
+cmcamdy,2,"新IR Python API适配升级（第三期）, 【Hackathon 6th】开源贡献个人挑战赛"
+shuaihehe,2,"【快乐开源】报错日志体系优化, 第二期启航计划"
+Turingg,2,"[Type Hints] 为公开 API 标注类型提示信息, 【Docathon】补充Overview文档相关API描述"
+jinyouzhi,2,"【快乐开源】报错日志体系优化, [CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划"
+KeithMaxwell,2,"【Hackathon 6th】优秀稿件征集与传播, 【Docathon】为 Tensor API 文档增加图例"
+zbt78,2,"【Hackathon 6th Code Camp】护航计划, 【complex op】paddlepaddle 支持复数"
+fufu0615,2,"第三期启航计划, 【Docathon】为 Tensor API 文档增加图例"
+MarioLulab,2,"【Hackathon 6th】开源贡献个人挑战赛, 【快乐开源】将 PyLayer 机制迁移至 PIR 体系下"
+xingmingyyj,2,"【Hackathon 6th Code Camp】护航计划, 【PIR】PIR下的分布式算子注册"
+EgoistSA,2,"第三期启航计划, 【Docathon】为 Tensor API 文档增加图例"
+yeteye,2,"第三期启航计划, 【Docathon】为 Tensor API 文档增加图例"
+kangguangli,2,"飞桨 IR 快乐开源活动表单, 【PIR】PIR下的分布式算子注册"
+LokeZhou,2,"🎁PaddleMIX 快乐开源活动表单, # PaddleMIX 快乐开源活动 (2024 Q3)"
+ndyysheep,2,"【Docathon】为 Tensor API 文档增加图例, 【快乐开源】Paddle Tensor 规范化"
+InsaneOnion,2,"第二期启航计划, 🎁PaddleMIX 快乐开源活动表单"
+sunnyLcs,1,【Hackathon 7th】Fundable Projects
+LouisCanBe,1,第二期启航计划
+Dmovic,1,第二期启航计划
+walkalone20,1,【Hackathon 6th】Fundable Projects
+MqLeet,1,【Hackathon 7th】Fundable Projects
+aooxin,1,【Hackathon 7th Code Camp】护航计划
+cse0001,1,【Hackathon 7th】开源贡献个人挑战赛
+decade-afk,1,【Hackathon 7th】开源贡献个人挑战赛
+Micalling,1,【Hackathon 7th】开源贡献个人挑战赛
+monster1015,1,【Hackathon 7th】开源贡献个人挑战赛
+LittleNoob2333,1,第二期启航计划
+Qin-sx,1,【Hackathon 7th】开源贡献个人挑战赛
+brisaurora,1,【Hackathon 7th】开源贡献个人挑战赛
+guozixu2001,1,【Hackathon 7th Code Camp】护航计划
+jshh0401,1,【Hackathon 6th】Fundable Projects
+smile2game,1,【Hackathon 7th Code Camp】护航计划
+Hanyonggong,1,【Hackathon 7th Code Camp】护航计划
+WoWYoYLoL,1,第二期启航计划
+huangjiyi,1,【Hackathon 6th Code Camp】护航计划
+sayoriaaa,1,第二期启航计划
+ZelinMa557,1,【Hackathon 6th Code Camp】护航计划
+unseenme,1,【Hackathon 6th Code Camp】护航计划
+WintersMontagne10335,1,【Hackathon 6th Code Camp】护航计划
+xusuyong,1,【Hackathon 6th Code Camp】护航计划
+Corle-hyz,1,【Hackathon 6th Code Camp】护航计划
+silverling,1,【Hackathon 6th Code Camp】护航计划
+cocoshe,1,【Hackathon 6th Code Camp】护航计划
+yulangz,1,【Hackathon 6th Code Camp】护航计划
+fty1777,1,【Hackathon 6th Code Camp】护航计划
+Xinyu302,1,【Hackathon 6th Code Camp】护航计划
+RedContritio,1,【Hackathon 6th Code Camp】护航计划
+lshpku,1,【Hackathon 6th Code Camp】护航计划
+yanchaomei,1,【Hackathon 6th】Fundable Projects
+lishuai-97,1,【Hackathon 6th Code Camp】护航计划
+Tsaiyue,1,【Hackathon 6th Code Camp】护航计划
+Yang-Changhui,1,【Hackathon 6th Code Camp】护航计划
+DUCH714,1,【Hackathon 6th Code Camp】护航计划
+DanGuge,1,【Hackathon 6th】开源贡献个人挑战赛
+Chen-Lun-Hao,1,【Hackathon 6th】开源贡献个人挑战赛
+MayYouBeProsperous,1,【Hackathon 6th】开源贡献个人挑战赛
+YibinLiu666,1,【Hackathon 6th Code Camp】护航计划
+lightrain-a,1,【Hackathon 6th】优秀稿件征集与传播
+mattheliu,1,【Hackathon 6th】Fundable Projects
+Layssy,1,【Hackathon 7th Code Camp】护航计划
+From00,1,【PIR】PIR下的分布式算子注册
+MINGtoMING,1,【Hackathon 7th Code Camp】护航计划
+cheng221,1,PaddleMIX 快乐开源活动 (2024 Q4)
+sunnychenxiwang,1,PaddleMIX 快乐开源活动 (2024 Q4)
+BeingGod,1,【飞桨科学计算工具组件开发大赛】25w奖金池💰
+qzylalala,1,【开源任务】Paddle2ONNX适配Paddle IR完成常用模型转化
+wmk,1,【开源任务】Paddle2ONNX适配Paddle IR完成常用模型转化
+liyongchao911,1,[Type Hints] 为公开 API 标注类型提示信息
+Betelgeu,1,[Type Hints] 为公开 API 标注类型提示信息
+DrRyanHuang,1,[Type Hints] 为公开 API 标注类型提示信息
+86kkd,1,[Type Hints] 为公开 API 标注类型提示信息
+epiphanyer,1,【PIR】Sparse 算子 Python API 适配
+Aurelius84,1,【快乐开源】PIR模式下单测问题修复与适配
+wanghuancoder,1,【快乐开源】PIR模式下单测问题修复与适配
+ChengNanFlower,1,【Docathon】为 Tensor API 文档增加图例
+jiachengdai,1,【Docathon】为 Tensor API 文档增加图例
+Leoforever123,1,【Docathon】为 Tensor API 文档增加图例
+bapijun,1,【complex op】paddlepaddle 支持复数
+GGBond8488,1,【complex op】paddlepaddle 支持复数
+zade23,1,[Cleanup] 框架历史遗留 API 清理计划（一期）
+PommesPeter,1,[Cleanup] 框架历史遗留 API 清理计划（一期）
+flying-forever,1,[Cleanup] 框架历史遗留 API 清理计划（一期）
+Harryoung,1,【Docathon】补充Overview文档相关API描述
+Difers,1,【PIR】PIR下的分布式算子注册
+westfish,1,PaddleMIX 快乐开源活动 (2024 Q4)
+luyao-cv,1,PaddleMIX 快乐开源活动 (2024 Q4)
+Xuxuanang,1,【Hackathon 7th Code Camp】护航计划
+swagger-coder,1,PaddleMIX 快乐开源活动 (2024 Q4)
+eggman-1024,1,【Hackathon 7th Code Camp】护航计划
+javey-q,1,【Hackathon 7th Code Camp】护航计划
+kylekk01,1,【Hackathon 7th Code Camp】护航计划
+lvdongyi,1,【Hackathon 7th Code Camp】护航计划
+a2064968462,1,[CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划
+winffke,1,[CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划
+kanze1,1,[CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划
+huangkr03,1,[CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划
+little1d,1,[CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划
+XavierZXY,1,[CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划
+Neo-WY,1,[CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划
+yuan20041218,1,[CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划
+mikemikimike,1,[CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划
+Victor-Bayim,1,[CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划
+ethan-sem,1,[CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划
+rich04lin,1,[CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划
+xz-alex,1,[CodeStyle][Typos][A-N] ✏️ Typos 工具引入计划
+guixxiic,1,[CodeStyle][Typos][O-W] ✏️ Typos 工具引入计划
+lizexu123,1,【开源任务】PIR-TensorRT converter推全升级
+zxcd,1,【Hackathon 7th】Fundable Projects No.7
+WFLiu0327,1,PaddleMIX 快乐开源活动 (2024 Q4)
+ApricityXX,1,【Hackathon 6th】Fundable Projects
