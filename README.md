@@ -34,34 +34,64 @@
 - 数据处理：PapaParse
 - 样式设计：CSS3 动画
 - 构建工具：Vite
+- 包管理器：pnpm
 
-## 快速开始
+## 环境要求
 
-1. 克隆项目
+- Node.js >= 16.0.0
+- pnpm >= 8.0.0
+- 现代浏览器（支持 ES6+ 特性）
+
+## 安装说明
+
+1. 安装 Node.js
 ```bash
-git clone https://github.com/yourusername/paddle-annual-2024.git
-cd paddle-annual-2024
+# 使用 nvm 安装 Node.js（推荐）
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+nvm install 18
+nvm use 18
+
+# 或直接从官网下载安装：https://nodejs.org/
 ```
 
-2. 安装依赖
+2. 安装 pnpm
 ```bash
-npm install
+# 使用 npm 安装 pnpm
+npm install -g pnpm
+
+# 或使用其他方式安装：https://pnpm.io/installation
 ```
 
-3. 启动开发服务器
+3. 克隆项目
 ```bash
-npm run dev
+git clone https://github.com/yourusername/PaddleGalaxy.git
+cd PaddleGalaxy
 ```
 
-4. 构建生产版本
+4. 安装依赖
 ```bash
-npm run build
+pnpm install
+```
+
+5. 启动开发服务器
+```bash
+pnpm dev
+```
+
+6. 构建生产版本
+```bash
+pnpm build
+```
+
+7. 预览生产版本
+```bash
+pnpm preview
 ```
 
 ## 项目结构
 
 ```
-paddle-annual-2024/
+PaddleGalaxy/
 ├── public/                 # 静态资源
 │   ├── paddle-logo.png
 │   └── data/              # CSV数据文件
@@ -71,39 +101,57 @@ paddle-annual-2024/
 │   ├── views/            # 页面视图
 │   ├── router/           # 路由配置
 │   └── App.vue           # 根组件
+├── index.html            # 入口 HTML
 ├── package.json          # 项目配置
-└── vite.config.js        # Vite配置
+├── pnpm-lock.yaml        # pnpm 依赖锁定文件
+└── vite.config.js        # Vite 配置
 ```
 
 ## 数据文件说明
 
+项目使用三个 CSV 文件存储数据：
+
 - `userpaddle_summary_2024.csv`: 用户年度总结数据
+  - 包含用户的 PR、Issue、代码量等基础统计信息
+  - 用于生成个人成就和贡献者标签
+
 - `userpaddle_timerecord_contributions_2024.csv`: 时间记录数据
+  - 记录用户的代码提交、PR合入等时间节点
+  - 用于展示特殊时间成就
+
 - `userpaddle_monthly_contributions_2024.csv`: 月度贡献数据
+  - 按月统计用户的各类贡献数据
+  - 用于生成贡献趋势图表
 
-## 环境要求
+## 开发指南
 
-- Node.js >= 16.0.0
-- Python >= 3.8 (后端服务)
-- 现代浏览器支持
-
-## 后端服务
-
-1. 安装Python依赖
+1. 代码规范
 ```bash
-pip install -r requirements.txt
+# 运行代码检查
+pnpm lint
+
+# 运行代码格式化
+pnpm format
 ```
 
-2. 启动服务
+2. 提交规范
 ```bash
-python app.py
+# 示例
+git commit -m "feat: add new feature"
+git commit -m "fix: resolve issue #123"
 ```
+
+3. 分支管理
+- main: 主分支，用于发布
+- develop: 开发分支
+- feature/*: 特性分支
+- fix/*: 修复分支
 
 ## 贡献指南
 
 1. Fork 本仓库
 2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
+3. 提交更改 (`git commit -m 'feat: add some AmazingFeature'`)
 4. 推送到分支 (`git push origin feature/AmazingFeature`)
 5. 提交 Pull Request
 
