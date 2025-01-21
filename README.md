@@ -1,4 +1,4 @@
-# PaddleGalaxy
+# paddle-annual-report
 
 一个基于 Vue.js 开发的 PaddlePaddle 社区年度总结网站，以星系探索的方式展现贡献者在2024年的开源贡献历程。在这个数字星系中，每个贡献者都是独特的星光，共同构建了 PaddlePaddle 的开源宇宙。
 
@@ -64,8 +64,8 @@ npm install -g pnpm
 
 3. 克隆项目
 ```bash
-git clone https://github.com/yourusername/PaddleGalaxy.git
-cd PaddleGalaxy
+git clone https://github.com/yourusername/paddle-annual-report.git
+cd paddle-annual-report
 ```
 
 4. 安装依赖
@@ -91,7 +91,7 @@ pnpm preview
 ## 项目结构
 
 ```
-PaddleGalaxy/
+paddle-annual-report/
 ├── public/                 # 静态资源
 │   ├── paddle-logo.png
 │   └── data/              # CSV数据文件
