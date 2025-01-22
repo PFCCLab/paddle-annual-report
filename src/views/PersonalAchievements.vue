@@ -71,7 +71,7 @@
                 <span class="status-icon" :class="{ 'starred': githubData.starred_paddle }">
                   {{ githubData.starred_paddle ? '⭐' : '☆' }}
                 </span>
-                {{ githubData.starred_paddle ? '已关注 PaddlePaddle' : '未关注 PaddlePaddle' }}
+                {{ githubData.starred_paddle ? '已关注 Paddle' : '未关注 Paddle' }}
               </div>
             </div>
             <div class="community-guide">

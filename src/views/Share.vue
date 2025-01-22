@@ -55,14 +55,6 @@
                   <h3>GitHub 数据</h3>
                   <div class="stats">
                     <div class="stat-item">
-                      <div class="stat-value">{{ formatNumber(posterData.prCount) }}</div>
-                      <div class="stat-label">2024年PR</div>
-                    </div>
-                    <div class="stat-item">
-                      <div class="stat-value">{{ formatNumber(posterData.issueCount) }}</div>
-                      <div class="stat-label">2024年Issue</div>
-                    </div>
-                    <div class="stat-item">
                       <div class="stat-value">{{ formatNumber(posterData.following) }}</div>
                       <div class="stat-label">Following</div>
                     </div>
@@ -489,6 +481,9 @@
   </script>
   
   <style scoped>
+  .guide-text {
+    text-align: center;
+  }
   .share {
     padding: 20px;
     min-height: 100vh;
@@ -535,12 +530,11 @@
   }
   
   .poster-header {
-    text-align: center;
-    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
   }
   
   .avatar-container {
@@ -553,21 +547,31 @@
   }
   
   .user-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid var(--accent-color);
+    margin: 0 auto 15px;
+  }
+  
+  .header-text {
+    text-align: center;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
   
   .header-text h2 {
-    font-size: 32px;
+    font-size: 24px;
     color: var(--accent-color);
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Press Start 2P', system-ui, -apple-system, sans-serif;
   }
   
   .subtitle {
-    font-size: 20px;
+    font-size: 16px;
     opacity: 0.8;
+    text-align: center;
+    font-family: 'Press Start 2P', system-ui, -apple-system, sans-serif;
   }
   
   .achievement-section {
@@ -607,7 +611,7 @@
   }
   
   .stat-value {
-    font-size: 24px;
+    font-size: 20px;
     color: var(--accent-color);
     margin-bottom: 10px;
   }
@@ -668,13 +672,17 @@
   }
   
   .keyword {
-    background: rgba(124, 77, 255, 0.2);
+    background: rgba(124, 77, 255, 0.3);
     padding: 8px 16px;
     border-radius: 20px;
     border: 2px solid var(--accent-color);
-    color: var(--text-color);
+    color: var(--accent-color);
     font-size: 16px;
+    font-family: 'Press Start 2P', system-ui, -apple-system, sans-serif;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
     animation: fadeIn 0.5s ease forwards;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(124, 77, 255, 0.3);
   }
   
   @keyframes fadeIn {
@@ -700,8 +708,9 @@
   }
   
   .paddle-logo {
-    width: 120px;
-    margin-top: 20px;
+    width: 200px;
+    height: auto;
+    margin: 0 auto 20px;
   }
   
   .action-buttons {
@@ -829,5 +838,58 @@
   .guide-step:hover {
     background: rgba(124, 77, 255, 0.2);
     transform: translateX(5px);
+  }
+  
+  .poster-content {
+    font-family: 'Press Start 2P', system-ui, -apple-system, sans-serif;
+  }
+  
+  .user-name {
+    font-size: 24px;
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Press Start 2P', system-ui, -apple-system, sans-serif;
+    text-shadow: 2px 2px 0 #000;
+  }
+  
+  .contribution-title {
+    font-size: 20px;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Press Start 2P', system-ui, -apple-system, sans-serif;
+    text-shadow: 1px 1px 0 #000;
+  }
+  
+  .stats-value {
+    font-size: 18px;
+    color: var(--accent-color);
+    font-family: 'Press Start 2P', system-ui, -apple-system, sans-serif;
+    text-shadow: 1px 1px 0 #000;
+  }
+  
+  .stats-label {
+    font-size: 14px;
+    color: var(--text-color);
+    font-family: 'Press Start 2P', system-ui, -apple-system, sans-serif;
+  }
+  
+  .keywords-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .keywords-title {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    font-family: 'Press Start 2P', system-ui, -apple-system, sans-serif;
+    text-shadow: 1px 1px 0 #000;
+  }
+  
+  .keyword-tag {
+    font-family: 'Press Start 2P', system-ui, -apple-system, sans-serif;
+    font-size: 12px;
   }
   </style>
