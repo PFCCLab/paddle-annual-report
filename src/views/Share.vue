@@ -36,22 +36,6 @@
                       <div class="stat-value">{{ formatNumber(userData.issue_count) }}</div>
                       <div class="stat-label">Issue 创建</div>
                     </div>
-                    <div class="stat-item">
-                      <div class="stat-value">{{ formatNumber(userData.merge_count) }}</div>
-                      <div class="stat-label">代码评审</div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="code-section">
-                  <h3>代码足迹</h3>
-                  <div class="code-stats">
-                    <div class="code-stat">
-                      <span class="highlight">{{ formatNumber(userData.code_additions) }}</span> 行新增
-                    </div>
-                    <div class="code-stat">
-                      <span class="highlight">{{ formatNumber(userData.code_deletions) }}</span> 行优化
-                    </div>
                   </div>
                 </div>
   
@@ -604,9 +588,9 @@
   
   .contribution-stats {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    margin: 30px 0;
+    margin: 20px 0;
   }
   
   .stat-item {
@@ -787,7 +771,6 @@
     .contribution-stats {
       grid-template-columns: 1fr;
       gap: 15px;
-      margin: 20px 0;
     }
   
     .stat-item {

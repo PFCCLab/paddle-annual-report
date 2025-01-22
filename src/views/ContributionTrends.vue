@@ -49,10 +49,6 @@
                 <div class="detail-value">{{ selectedData.prs }}</div>
               </div>
               <div class="detail-item">
-                <div class="detail-label">Merges</div>
-                <div class="detail-value">{{ selectedData.merges }}</div>
-              </div>
-              <div class="detail-item">
                 <div class="detail-label">总贡献</div>
                 <div class="detail-value">{{ selectedData.total }}</div>
               </div>
@@ -94,7 +90,6 @@ export default {
     const selectedData = ref({
       issues: 0,
       prs: 0,
-      merges: 0,
       total: 0
     })
 
@@ -102,8 +97,7 @@ export default {
       if (!userData.value.length) return 0
       return userData.value.reduce((total, item) => {
         return total + (parseInt(item.Issues) || 0) + 
-               (parseInt(item.PRs) || 0) + 
-               (parseInt(item.Merges) || 0)
+               (parseInt(item.PRs) || 0) 
       }, 0)
     }
 
@@ -119,8 +113,7 @@ export default {
 
       userData.value.forEach(item => {
         const total = (parseInt(item.Issues) || 0) + 
-                     (parseInt(item.PRs) || 0) + 
-                     (parseInt(item.Merges) || 0)
+                     (parseInt(item.PRs) || 0) 
         if (total > maxValue) {
           maxValue = total
           maxMonth = item.Month
@@ -134,8 +127,7 @@ export default {
       if (!userData.value.length) return 0
       return userData.value.reduce((max, item) => {
         const total = (parseInt(item.Issues) || 0) + 
-                     (parseInt(item.PRs) || 0) + 
-                     (parseInt(item.Merges) || 0)
+                     (parseInt(item.PRs) || 0) 
         return Math.max(max, total)
       }, 0)
     }
@@ -202,10 +194,8 @@ export default {
           selectedData.value = {
             issues: parseInt(monthData.Issues) || 0,
             prs: parseInt(monthData.PRs) || 0,
-            merges: parseInt(monthData.Merges) || 0,
             total: (parseInt(monthData.Issues) || 0) + 
-                   (parseInt(monthData.PRs) || 0) + 
-                   (parseInt(monthData.Merges) || 0)
+                   (parseInt(monthData.PRs) || 0) 
           }
           showDetail.value = true
         }
@@ -236,13 +226,11 @@ export default {
         const months = sortedData.map(item => `${item.Month}月`)
         const prs = sortedData.map(item => parseInt(item.PRs) || 0)
         const issues = sortedData.map(item => parseInt(item.Issues) || 0)
-        const merges = sortedData.map(item => parseInt(item.Merges) || 0)
         
         return {
           months,
           pr: prs,
-          issue: issues,
-          merge: merges
+          issue: issues
         }
       }
 
@@ -266,7 +254,7 @@ export default {
           }
         },
         legend: {
-          data: ['Issues', 'PRs', 'Merges'],
+          data: ['Issues', 'PRs'],
           textStyle: {
             color: '#fff',
             fontSize: 14
@@ -357,28 +345,6 @@ export default {
               color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
                 { offset: 0, color: 'rgba(78, 205, 196, 0.3)' },
                 { offset: 1, color: 'rgba(78, 205, 196, 0.1)' }
-              ])
-            }
-          },
-          {
-            name: 'Merges',
-            type: 'line',
-            data: chartData.merge,
-            smooth: true,
-            symbol: 'circle',
-            symbolSize: 10,
-            itemStyle: {
-              color: '#FFD93D',
-              borderWidth: 2,
-              borderColor: '#fff'
-            },
-            lineStyle: {
-              width: 3
-            },
-            areaStyle: {
-              color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-                { offset: 0, color: 'rgba(255, 217, 61, 0.3)' },
-                { offset: 1, color: 'rgba(255, 217, 61, 0.1)' }
               ])
             }
           }

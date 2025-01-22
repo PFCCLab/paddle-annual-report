@@ -7,6 +7,18 @@
     </div>
     <div v-else-if="showError" class="error-message">
       {{ errorMessage }}
+      <div class="guide-text" v-if="errorMessage === '未找到贡献数据'">
+        <p>感谢你关注 PaddlePaddle 开源社区！</p>
+        <p>虽然目前还没有贡献记录，但我们期待你的参与。</p>
+        <p>PaddlePaddle 社区欢迎各种形式的贡献：</p>
+        <ul>
+          <li>提交 PR 解决问题</li>
+          <li>反馈和讨论 Issue</li>
+          <li>完善项目文档</li>
+          <li>分享使用经验</li>
+        </ul>
+        <p>让我们一起推动深度学习框架的发展！</p>
+      </div>
     </div>
     <div v-else class="story-container">
       <div class="story-text">
@@ -17,40 +29,12 @@
 
         <div class="text-block" v-show="showBlock2">
           <template v-if="userData.most_active_repo">
-            你经常出现在 <span class="highlight">{{ userData.most_active_repo }}</span> 项目中，
-            <template v-if="userData.most_active_repo === 'Paddle'">
-              为深度学习框架的发展添砖加瓦。
-            </template>
-            <template v-else-if="userData.most_active_repo === 'PaddleNLP'">
-              推动自然语言处理技术的进步。
-            </template>
-            <template v-else-if="userData.most_active_repo === 'PaddleClas'">
-              提升图像分类的精准度。
-            </template>
-            <template v-else-if="userData.most_active_repo === 'PaddleDetection'">
-              优化目标检测的性能。
-            </template>
-            <template v-else-if="userData.most_active_repo === 'PaddleSeg'">
-              完善图像分割的能力。
-            </template>
-            <template v-else-if="userData.most_active_repo === 'PaddleOCR'">
-              提升文字识别的准确性。
-            </template>
-            <template v-else-if="userData.most_active_repo === 'PaddleGAN'">
-              探索图像生成的可能。
-            </template>
-            <template v-else-if="userData.most_active_repo === 'PaddleRec'">
-              优化推荐系统的效果。
-            </template>
-            <template v-else-if="userData.most_active_repo === 'PaddleVideo'">
-              提升视频处理的能力。
-            </template>
-            <template v-else-if="userData.most_active_repo === 'FastDeploy'">
-              加速模型部署的效率。
-            </template>
-            <template v-else>
-              展现了你的专业能力。
-            </template>
+            你在 <span class="highlight">{{ userData.most_active_repo }}</span> 项目中贡献最为活跃，
+            展现了专业的技术实力。
+          </template>
+          <template v-else>
+            虽然暂时还没有项目贡献，但 PaddlePaddle 社区的大门永远向你敞开。
+            我们期待你的加入，一起探索深度学习的无限可能！
           </template>
         </div>
 
@@ -99,6 +83,7 @@ export default {
     const showBlock2 = ref(false)
     const showBlock3 = ref(false)
     const showBlock4 = ref(false)
+    const showBlock5 = ref(false)
     const keywords = ref([])
 
     const determineKeywords = (userRecord) => {
@@ -245,16 +230,18 @@ export default {
         const userRecord = results.data.find(item => item.author === githubId.value)
         if (userRecord) {
           userData.value = {
-            most_active_repo: getMostActiveRepo(userRecord.repos)
+            ...userRecord,
+            most_active_repo: userRecord.most_active_repo || ''
           }
           keywords.value = determineKeywords(userRecord)
           setTimeout(() => { showBlock1.value = true }, 500)
           setTimeout(() => { showBlock2.value = true }, 1500)
           setTimeout(() => { showBlock3.value = true }, 2500)
           setTimeout(() => { showBlock4.value = true }, 3500)
+          setTimeout(() => { showBlock5.value = true }, 4500)
         } else {
           showError.value = true
-          errorMessage.value = '未找到该用户的贡献记录'
+          errorMessage.value = '未找到贡献数据'
         }
       } catch (error) {
         console.error('Error loading data:', error)
@@ -278,6 +265,7 @@ export default {
       showBlock2,
       showBlock3,
       showBlock4,
+      showBlock5,
       keywords
     }
   }

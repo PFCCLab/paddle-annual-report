@@ -10,16 +10,6 @@
     </div>
     <div v-else class="story-container">
       <div class="story-text">
-        <div class="text-block" v-show="showBlock1">
-          在2024年，你创造了一些令人印象深刻的时间记录。
-          <template v-if="userData.max_additions">
-            <span class="highlight">{{ formatNumber(userData.max_additions) }}</span> 行代码是你单次提交的最高记录，
-            发生在 <span class="highlight">{{ formatDate(userData.max_additions_time) }}</span>，
-          </template>
-          <template v-else>
-            期待你在PaddlePaddle社区的第一个贡献！
-          </template>
-        </div>
 
         <div class="text-block" v-show="showBlock2">
           <template v-if="userData.fastest_merge_time">
@@ -43,10 +33,7 @@
           </template>
         </div>
 
-        <div class="text-block" v-show="showBlock4">
-          你的最大代码删除是 <span class="highlight">{{ formatNumber(userData.max_deletions) }}</span> 行，
-          发生在 <span class="highlight">{{ formatDate(userData.max_deletions_time) }}</span>
-        </div>
+        
       </div>
 
       <div class="records-grid" v-show="showBlock4">

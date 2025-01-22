@@ -102,18 +102,6 @@
               成功合入了 <span class="highlight">{{ userData.merge_count }}</span> 次代码。
             </div>
 
-            <div class="text-block" v-show="showBlock2">
-              你的代码贡献总计
-              <span class="highlight">{{ formatNumber(userData.code_additions) }}</span> 行新增，
-              <span class="highlight">{{ formatNumber(userData.code_deletions) }}</span> 行优化，
-              展现了对代码质量的不懈追求。
-            </div>
-
-            <div class="text-block" v-show="showBlock3">
-              你活跃在 <span class="highlight">{{ userData.repo_count }}</span> 个仓库中，
-              成为了一名 <span class="highlight">{{ userData.contributor_type }}</span>，
-              以专业的态度推动项目进展。
-            </div>
 
             <div class="text-block" v-show="showBlock4">
               你的第一个PR是在 <span class="highlight">{{ formatDate(userData.first_pr_time) }}</span>，
