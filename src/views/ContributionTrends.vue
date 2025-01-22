@@ -8,6 +8,11 @@
       </div>
       <div v-else-if="showError" class="error-message">
         {{ errorMessage }}
+        <div class="guide-action">
+          <router-link to="/share" class="guide-button">
+            查看我的年度总结海报
+          </router-link>
+        </div>
       </div>
       <div v-else class="story-container">
         <div class="story-text">
@@ -658,5 +663,28 @@ export default {
   .detail-body {
     grid-template-columns: 1fr;
   }
+}
+
+.guide-action {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.guide-button {
+  display: inline-block;
+  background: rgba(124, 77, 255, 0.2);
+  border: 2px solid var(--accent-color);
+  color: var(--text-color);
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.guide-button:hover {
+  background: rgba(124, 77, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 </style> 

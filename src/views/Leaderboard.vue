@@ -214,17 +214,27 @@ export default {
 
 .star-info {
   text-align: center;
+  width: 100%;
+  overflow: hidden;
 }
 
 .star-name {
   color: var(--text-color);
-  font-size: 16px;
+  font-size: clamp(10px, 2.5vw, 16px);
   margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 5px;
 }
 
 .star-title {
   color: var(--accent-color);
-  font-size: 14px;
+  font-size: clamp(8px, 2vw, 14px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 5px;
 }
 
 .details-popup {
@@ -315,11 +325,11 @@ export default {
   }
 
   .star-name {
-    font-size: 14px;
+    font-size: clamp(8px, 3vw, 14px);
   }
 
   .star-title {
-    font-size: 12px;
+    font-size: clamp(6px, 2.5vw, 12px);
   }
 
   .details-popup {

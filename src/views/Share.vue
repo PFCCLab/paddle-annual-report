@@ -27,7 +27,7 @@
               <template v-if="posterData.isContributor">
                 <div class="achievement-section">
                   <h3>年度贡献</h3>
-                  <div class="stats">
+                  <div class="contribution-stats">
                     <div class="stat-item">
                       <div class="stat-value">{{ formatNumber(userData.pr_count) }}</div>
                       <div class="stat-label">PR 提交</div>
@@ -522,14 +522,14 @@
   .poster-container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0px;
   }
   
   .poster {
     position: relative;
     background: #1a237e;
     border: 4px solid var(--accent-color);
-    padding: 40px;
+    padding: 20px;
     border-radius: 8px;
     color: var(--text-color);
     overflow: hidden;
@@ -602,29 +602,35 @@
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
   
-  .stats {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
+  .contribution-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 30px 0;
   }
   
   .stat-item {
-    text-align: center;
-    background: rgba(124, 77, 255, 0.1);
-    padding: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid var(--accent-color);
+    padding: 20px;
     border-radius: 8px;
-    border: 1px solid rgba(124, 77, 255, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .stat-item:hover {
+    transform: translateY(-5px);
   }
   
   .stat-value {
-    font-size: 36px;
+    font-size: 24px;
     color: var(--accent-color);
-    margin-bottom: 5px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
   }
   
   .stat-label {
-    font-size: 16px;
+    font-size: 14px;
+    color: var(--text-color);
   }
   
   .code-section {
@@ -778,12 +784,22 @@
       font-size: 16px;
     }
   
+    .contribution-stats {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      margin: 20px 0;
+    }
+  
+    .stat-item {
+      padding: 15px;
+    }
+  
     .stat-value {
-      font-size: 28px;
+      font-size: 20px;
     }
   
     .stat-label {
-      font-size: 14px;
+      font-size: 12px;
     }
   
     .code-stats {
