@@ -3,26 +3,53 @@
     <h1 class="pixel-title">开源之星</h1>
 
     <div class="stars-content">
-      <div class="stars-grid">
-        <div 
-          v-for="(contributor, index) in contributors" 
-          :key="index"
-          class="star-card"
-          @mouseover="showDetails(contributor)"
-          @mouseleave="hideDetails"
-          @click="goToGitHub(contributor.author)"
-        >
-          <div class="star-avatar">
-            <img :src="'https://github.com/' + contributor.author + '.png'" :alt="contributor.author">
-          </div>
-          <div class="star-info">
-            <div class="star-name">{{ contributor.author }}</div>
-            <div class="star-title">{{ getContributorTitle(contributor) }}</div>
+      <div class="period-section">
+        <h2 class="period-title">2024 年上半年开源之星</h2>
+        <div class="stars-grid">
+          <div 
+            v-for="(contributor, index) in firstHalfContributors" 
+            :key="index"
+            class="star-card"
+            @mouseover="showDetails(contributor)"
+            @mouseleave="hideDetails"
+            @click="contributor.status !== '???' && goToGitHub(contributor.author)"
+          >
+            <div class="star-avatar">
+              <img v-if="contributor.status !== '???'" :src="'https://github.com/' + contributor.author + '.png'" :alt="contributor.author">
+              <div v-else class="mystery-avatar">???</div>
+            </div>
+            <div class="star-info">
+              <div class="star-name">{{ contributor.status !== '???' ? contributor.author : '???' }}</div>
+              <div class="star-title">{{ contributor.title }}</div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="details-popup" v-if="selectedContributor" :style="popupStyle">
+      <div class="period-section">
+        <h2 class="period-title">2024 年下半年开源之星</h2>
+        <div class="stars-grid">
+          <div 
+            v-for="(contributor, index) in secondHalfContributors" 
+            :key="index"
+            class="star-card"
+            @mouseover="showDetails(contributor)"
+            @mouseleave="hideDetails"
+            @click="contributor.status !== '???' && goToGitHub(contributor.author)"
+          >
+            <div class="star-avatar">
+              <img v-if="contributor.status !== '???'" :src="'https://github.com/' + contributor.author + '.png'" :alt="contributor.author">
+              <div v-else class="mystery-avatar">???</div>
+            </div>
+            <div class="star-info">
+              <div class="star-name">{{ contributor.status !== '???' ? contributor.author : '???' }}</div>
+              <div class="star-title">{{ contributor.title }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="details-popup" v-if="selectedContributor && selectedContributor.status !== '???'" :style="popupStyle">
         <div class="popup-content">
           <h3>{{ selectedContributor.author }}</h3>
           <div class="contribution-stats">
@@ -62,7 +89,7 @@
 </template>
 
 <script>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 import PageNavigation from '../components/PageNavigation.vue'
 import Papa from 'papaparse'
 
@@ -76,6 +103,14 @@ export default {
     const selectedContributor = ref(null)
     const popupStyle = ref({})
 
+    const firstHalfContributors = computed(() => {
+      return contributors.value.filter(c => c.period === '上半年')
+    })
+
+    const secondHalfContributors = computed(() => {
+      return contributors.value.filter(c => c.period === '下半年')
+    })
+
     const loadData = async () => {
       try {
         const response = await fetch('/Open Source Star.csv')
@@ -87,24 +122,19 @@ export default {
         
         contributors.value = results.data.map(item => ({
           author: item.author,
+          title: item.title || '开源贡献者',
+          period: item.period,
+          status: item.status || 'show',
           contributions: [{
             pr_count: parseFloat(item.pr_count) || 0,
             issue_count: parseFloat(item.issue_count) || 0,
             merge_count: parseFloat(item.merge_count) || 0,
-            repos: item.repos?.split(',').map(repo => repo.trim()) || [],
-            active_time_tag: item.active_time_tag || '',
-            first_pr_time: item.first_pr_time,
-            latest_pr_time_midnight: item.latest_pr_time_midnight,
-            title: item.title || '开源贡献者'
+            repos: item.repos?.split(',').map(repo => repo.trim()) || []
           }]
         }))
       } catch (error) {
         console.error('Error loading data:', error)
       }
-    }
-
-    const getContributorTitle = (contributor) => {
-      return contributor.contributions[0].title || '开源贡献者'
     }
 
     const getPRCount = (contributor) => 
@@ -118,7 +148,6 @@ export default {
 
     const showDetails = (contributor) => {
       selectedContributor.value = contributor
-      // 计算弹窗位置，避免超出屏幕
       const event = window.event
       const rect = event.target.getBoundingClientRect()
       popupStyle.value = {
@@ -142,9 +171,10 @@ export default {
 
     return {
       contributors,
+      firstHalfContributors,
+      secondHalfContributors,
       selectedContributor,
       popupStyle,
-      getContributorTitle,
       getPRCount,
       getIssueCount,
       getProjects,
@@ -169,6 +199,18 @@ export default {
   font-size: 24px;
   margin-bottom: 40px;
   text-shadow: 2px 2px 0 #000;
+}
+
+.period-section {
+  margin-bottom: 60px;
+}
+
+.period-title {
+  text-align: center;
+  color: var(--accent-color);
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 0 #000;
 }
 
 .stars-content {
@@ -312,6 +354,23 @@ export default {
   border-radius: 4px;
   font-size: 12px;
   border: 1px solid var(--accent-color);
+}
+
+.mystery-avatar {
+  width: 100%;
+  height: 100%;
+  background: rgba(124, 77, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.star-card[data-status="???"] {
+  cursor: default;
 }
 
 @media (max-width: 768px) {

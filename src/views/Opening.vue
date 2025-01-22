@@ -1,5 +1,8 @@
 <template>
   <div class="opening-container">
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
     <div class="castle" :class="{ 'castle-appear': showCastle }">
       <div class="castle-body"></div>
       <div class="castle-text" v-if="showText">PaddlePaddle 2024</div>
@@ -64,6 +67,74 @@ export default {
   overflow: hidden;
 }
 
+.opening-container::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  box-shadow: 
+    10vw 10vh 1px white,
+    20vw 20vh 1px white,
+    30vw 30vh 1px white,
+    40vw 40vh 1px white,
+    50vw 50vh 1px white,
+    60vw 60vh 1px white,
+    70vw 70vh 1px white,
+    80vw 80vh 1px white,
+    90vw 90vh 1px white,
+    15vw 15vh 1px white,
+    25vw 25vh 1px white,
+    35vw 35vh 1px white,
+    45vw 45vh 1px white,
+    55vw 55vh 1px white,
+    65vw 65vh 1px white,
+    75vw 75vh 1px white,
+    85vw 85vh 1px white,
+    95vw 95vh 1px white;
+  animation: twinkle 5s infinite;
+}
+
+.shooting-star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  background: linear-gradient(to right, white, transparent);
+  animation: shootingStar 2s linear infinite;
+}
+
+.shooting-star:nth-child(2) {
+  top: 30%;
+  animation-delay: 1s;
+}
+
+.shooting-star:nth-child(3) {
+  top: 60%;
+  animation-delay: 0.5s;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes shootingStar {
+  0% {
+    transform: translateX(-100%) translateY(0) rotate(-45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(200vw) translateY(200vh) rotate(-45deg);
+    opacity: 0;
+  }
+}
+
 .castle {
   width: 300px;
   height: 400px;
@@ -77,8 +148,6 @@ export default {
 }
 
 .castle-body {
-  width: 100%;
-  height: 100%;
   background-color: #333;
   clip-path: polygon(20% 100%, 80% 100%, 80% 30%, 100% 30%, 50% 0%, 0% 30%, 20% 30%);
 }
@@ -111,7 +180,9 @@ export default {
   width: 100%;
   height: 100%;
   background-color: var(--accent-color);
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  transform: scale(0.8);
+  animation: rotate 3s linear infinite;
 }
 
 .start-text {
@@ -156,6 +227,15 @@ export default {
   }
   50% {
     transform: scale(1.1);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: scale(0.8) rotate(0deg);
+  }
+  to {
+    transform: scale(0.8) rotate(360deg);
   }
 }
 </style> 
