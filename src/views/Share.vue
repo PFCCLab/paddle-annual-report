@@ -538,8 +538,6 @@
   }
   
   .avatar-container {
-    width: 120px;
-    height: 120px;
     border-radius: 50%;
     overflow: hidden;
     border: 4px solid var(--accent-color);
@@ -550,8 +548,6 @@
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 4px solid var(--accent-color);
-    margin: 0 auto 15px;
   }
   
   .header-text {
