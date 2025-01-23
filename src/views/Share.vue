@@ -760,10 +760,6 @@
       padding: 20px;
     }
   
-    .avatar-container {
-      width: 80px;
-      height: 80px;
-    }
   
     .header-text h2 {
       font-size: 24px;
